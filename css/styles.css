@@ -16,9 +16,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
-.img {
+img {
     display: block;
 }
+
+
 
 ul,
 ol {
@@ -120,13 +122,13 @@ gap: 40px;
 .business {
     padding: 188px 0;
     background-color: #2e2f42;
-
+    display: flex;
+    align-items: center;
 }
 
 .title-business {
     display: flex;
     align-items: center;
-    padding: 0 472px;
     max-width: 496px;
     margin-bottom: 48px;
     font-weight: 700;
@@ -140,6 +142,7 @@ gap: 40px;
 .button-business {
     display: block;
     align-items: center;
+    padding: 16px 32px;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -169,7 +172,7 @@ gap: 40px;
 }
 
 .li-benefits {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .title-benefits {
@@ -203,9 +206,9 @@ gap: 40px;
 }
 
 .li-team {
-    width: calc((100% - 3 * 24px) / 4);
-    border-radius: 0px 0px 4px 4px; 
     background-color: #FFFFFF;
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px; 
 }
 
 .title-team {
@@ -259,7 +262,7 @@ gap: 40px;
 }
 
 .li-portfolio {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3); 
 }
 
 .title-portfolio {
@@ -303,12 +306,15 @@ gap: 40px;
     padding: 100px 0
 }
 
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px; 
+}
 
 .logo-end {
     color: #f4f4fd;
     font-family: "Raleway", sans-serif;
-    display: inline-block;
-    margin-bottom: 16px; 
+    
 }
 
 .article-footer {
