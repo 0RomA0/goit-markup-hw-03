@@ -6,16 +6,33 @@ body {
     background-color:  #fff;
 }
 
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-
+.header-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e7e9fc;
+    
+}
 
 .logo {
 font-family: "Raleway", sans-serif;
@@ -28,13 +45,31 @@ color: #4d5ae5;
 }
 
 .header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+.logo-start {
     font-family: "Raleway", sans-serif;
     color: #2e2f42;
 }
 
+.header-nav {
+    display: flex;
+    align-items: center;
 
+}
+
+.nav-list {
+display: flex;
+align-items: center;
+gap: 40px;
+}
 
 .link-nav {
+    display: block;
+    align-items: center;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -48,11 +83,21 @@ color: #4d5ae5;
 }
 
 .address {
+    margin-left: auto;
     font-style: normal;
     color: #404bbf;
 }
 
+.list-address {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .link-address {
+    display: block;
+    align-items: center;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -65,11 +110,20 @@ color: #4d5ae5;
     color: #404bbf;
 }
 
+
 .business {
+    display: flex;
+    align-items: center;
     background-color: #2e2f42;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .title-business {
+    padding-top: 188px;
+    padding-right: 472px;
+    padding-left: 472px;
+    margin-bottom: 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 107%;
@@ -79,6 +133,11 @@ color: #4d5ae5;
 }
 
 .button-business {
+    display: block;
+    align-items: center;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-bottom: 188px;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -94,8 +153,19 @@ color: #4d5ae5;
     background-color: #404BBF;
 }
 
+.benefits {
+    padding: 120px;
+}
+
+.list-benefits {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
 .title-benefits {
+    display: block;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -104,6 +174,7 @@ color: #4d5ae5;
 }
 
 .article-benefits {
+    display: block;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -114,15 +185,27 @@ color: #4d5ae5;
 
 
 .team {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #f4f4fd;
 }
 
+
+.list-team {
+display: flex;
+align-items: center;
+gap: 24px;
+padding: 120px;
+}
 
 .li-team {
     background-color: #FFFFFF;
 }
 
 .title-team {
+    padding-top: 120px;
+    margin-bottom: 72px;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -132,7 +215,14 @@ color: #4d5ae5;
     color: #2e2f42;
 }
 
+.div-team {
+    padding: 32px 16px;
+}
+
 .title-team-members {
+    display: block;
+    align-items: center;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -150,9 +240,28 @@ color: #4d5ae5;
     color: #434455;
 }
 
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
 
+.list-portfolio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 156px;
+    gap: 24px;
+}
+
+.div-portfolio {
+  
+}
 
 .title-portfolio {
+    padding-top: 120px;
+    margin-bottom: 72px;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -163,6 +272,8 @@ color: #4d5ae5;
 }
 
 .pid-title-portfolio {
+    padding-top: 32px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -184,12 +295,22 @@ color: #4d5ae5;
     font-family: "Raleway", sans-serif;
 }
 
-.footer-logo {
+.div-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 1020px 100px 156px;
+}
+
+.logo-end {
     color: #f4f4fd;
     font-family: "Raleway", sans-serif;
 }
 
 .article-footer {
+    width: 264px;
+    display: block;
+    flex-direction: column;
+    margin-top: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
